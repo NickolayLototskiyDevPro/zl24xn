@@ -1,14 +1,3 @@
-// const ProjectModule = (() => {
-//     let instance;
-//     return {
-//         getInstance() {
-//             if (!instance) {
-//                 instance = project;
-//             }
-//             return instance;
-//         },
-//     };
-// })();
 const ProjectModule = (function() {
     let instance;
     const createInstance = () => ({
@@ -116,3 +105,8 @@ const ProjectModule = (function() {
         }
     };
 })();
+module.exports = {
+    firstName: 'Jane',
+    lastName: 'Shkyrmetoffa',
+    task: ProjectModule
+}
